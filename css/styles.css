@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
 html {
     font-size: 16px;
 }
@@ -45,6 +46,11 @@ h6 {
 
 body {
     margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+span {
+    font-family: "Inspiration", cursive;
 }
 
 
@@ -97,6 +103,14 @@ body {
 
 /* Otras clases */
 
+.main {
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 20%;
+}
+
 
 /* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 
@@ -106,12 +120,15 @@ body {
     justify-content: center;
 }
 
-.main {
-    height: 100vh;
-    background-color: black;
+.main h1 {
+    color: white;
 }
 
-@media only screen and (max-width: 600px) {
+.main p {
+    color: rgb(236, 236, 236);
+}
+
+@media only screen and (max-width: 800px) {
     /* column-2 pasará de tener 50% a 100% */
     .column-2 {
         width: 100%;
@@ -123,5 +140,16 @@ body {
     /* column-4 pasará de tener 25% a 50% */
     .column-4 {
         width: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* clases */
+    .main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    html {
+        font-size: 13px;
     }
 }
